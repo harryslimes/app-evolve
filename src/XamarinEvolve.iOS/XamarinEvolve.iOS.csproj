@@ -218,9 +218,6 @@
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
-    <Reference Include="ToastIOS">
-      <HintPath>..\Components\ToastIOS-1.6\lib\ios-unified\ToastIOS.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Azure.NotificationHubs.iOS, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.Azure.NotificationHubs.iOS.1.2.5.2\lib\Xamarin.iOS10\Xamarin.Azure.NotificationHubs.iOS.dll</HintPath>
       <Private>True</Private>
@@ -334,6 +331,9 @@
       <HintPath>..\packages\ZXing.Net.Mobile.2.1.47\lib\Xamarin.iOS10\ZXingNetMobile.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="ToastIOS">
+      <HintPath>LocalPackages\Toast\ToastIOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\heart_empty.png" />
@@ -441,69 +441,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
   <ItemGroup>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-29.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-58.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-87.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-80.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-120-2.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-57.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-114.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-120.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-180.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\PadIcon-29.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\PadIcon-58.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\PadIcon-40.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\PadIcon-80.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\PadIcon-50.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\PadIcon-100.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\PadIcon-72.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\PadIcon-144.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\PadIcon-76.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\PadIcon-152.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\PadIcon-167.png">
-      <InProject>false</InProject>
-    </ImageAsset>
+    
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XamarinEvolve.Clients.Portable\XamarinEvolve.Clients.Portable.csproj">
