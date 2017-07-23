@@ -1,4 +1,4 @@
-
+/*
 // Helpers/Settings.cs This file was automatically added when you installed the Settings Plugin. If you are not using a PCL then comment this file back in to use it.
 using Plugin.Settings;
 using Plugin.Settings.Abstractions;
@@ -12,30 +12,33 @@ namespace XamarinEvolve.Droid.Helpers
   /// </summary>
   public static class Settings
   {
-        static ISettings AppSettings
-        {
-          get
-          {
-            return CrossSettings.Current;
-          }
-        }
+    private static ISettings AppSettings
+    {
+      get
+      {
+        return CrossSettings.Current;
+      }
+    }
 
-        const string NotificationIdKey = "notification_id";
-        static readonly int NotificationIdDefault = 0;
+    #region Setting Constants
 
-        public static int NotificationId
-        {
-            get { return AppSettings.GetValueOrDefault<int>(NotificationIdKey, NotificationIdDefault); }
-            set
-            {
-                AppSettings.AddOrUpdateValue<int>(NotificationIdKey, value);
-            }
-        }
+    private const string SettingsKey = "settings_key";
+    private static readonly string SettingsDefault = string.Empty;
 
-        public static int GetUniqueNotificationId()
-        {
-            return NotificationId++;
-        }
+    #endregion
+
+
+    public static string GeneralSettings
+    {
+      get
+      {
+        return AppSettings.GetValueOrDefault<string>(SettingsKey, SettingsDefault);
+      }
+      set
+      {
+        AppSettings.AddOrUpdateValue<string>(SettingsKey, value);
+      }
+    }
 
   }
-}
+}*/

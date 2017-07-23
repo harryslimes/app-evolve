@@ -4,6 +4,7 @@ using Plugin.Settings.Abstractions;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using XamarinEvolve.DataStore.Abstractions;
+using System.Collections.Generic;
 
 namespace XamarinEvolve.DataStore.Mock
 {
@@ -28,6 +29,12 @@ namespace XamarinEvolve.DataStore.Mock
 
         public static void SetFavorite(string id, bool favorite) =>
             AppSettings.AddOrUpdateValue("fav_"+id, favorite);
+
+        public static async Task<IEnumerable<DataObjects.Session>> GetSessions()
+        {
+           var sessions =  await DependencyService.Get<ISessionStore>().GetItemsAsync();
+            return sessions;
+        }
 
         public static async Task ClearFavorites()
         {

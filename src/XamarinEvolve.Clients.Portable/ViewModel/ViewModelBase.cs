@@ -19,7 +19,7 @@ namespace XamarinEvolve.Clients.Portable
             Navigation = navigation;
         }
 
-        public static void Init (bool mock = true)
+        public static void Init (bool mock = false)
         {
 
 #if ENABLE_TEST_CLOUD && !DEBUG
@@ -38,7 +38,7 @@ namespace XamarinEvolve.Clients.Portable
             if (mock) 
             {
                 DependencyService.Register<ISessionStore, XamarinEvolve.DataStore.Mock.SessionStore> ();
-                DependencyService.Register<IFavoriteStore, XamarinEvolve.DataStore.Mock.FavoriteStore> ();
+				DependencyService.Register<IFavoriteStore, XamarinEvolve.DataStore.Mock.FavoriteStore> ();
                 DependencyService.Register<IFeedbackStore, XamarinEvolve.DataStore.Mock.FeedbackStore> ();
                 DependencyService.Register<ISpeakerStore, XamarinEvolve.DataStore.Mock.SpeakerStore> ();
                 DependencyService.Register<ISponsorStore, XamarinEvolve.DataStore.Mock.SponsorStore> ();
@@ -52,7 +52,7 @@ namespace XamarinEvolve.Clients.Portable
             else 
             {
                 DependencyService.Register<ISessionStore, XamarinEvolve.DataStore.Azure.SessionStore> ();
-                DependencyService.Register<IFavoriteStore, XamarinEvolve.DataStore.Azure.FavoriteStore> ();
+                DependencyService.Register<IFavoriteStore, XamarinEvolve.DataStore.Azure.FavoriteStoreLocal> ();
                 DependencyService.Register<IFeedbackStore, XamarinEvolve.DataStore.Azure.FeedbackStore> ();
                 DependencyService.Register<ISpeakerStore, XamarinEvolve.DataStore.Azure.SpeakerStore> ();
                 DependencyService.Register<ISponsorStore, XamarinEvolve.DataStore.Azure.SponsorStore> ();
@@ -133,7 +133,7 @@ namespace XamarinEvolve.Clients.Portable
                         G = 53,
                         B = 235
                     },
-                    UseSafairReaderMode = true,
+                    UseSafariReaderMode = true,
                     UseSafariWebViewController = true
                 });
             } 

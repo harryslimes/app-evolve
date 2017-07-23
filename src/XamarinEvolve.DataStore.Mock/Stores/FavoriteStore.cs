@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using XamarinEvolve.DataObjects;
 using XamarinEvolve.DataStore.Abstractions;
@@ -30,6 +31,13 @@ namespace XamarinEvolve.DataStore.Mock
         {
             await Settings.ClearFavorites();
         }
+
+		public override async Task<IEnumerable<Favorite>> GetItemsAsync(bool forceRefresh = false)
+		{
+			return await Task.FromResult<IEnumerable<Favorite>>(null);
+		}
+
+
     }
 }
 

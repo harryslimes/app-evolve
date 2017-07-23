@@ -21,7 +21,7 @@ namespace XamarinEvolve.DataStore.Azure
 
             var sessions = await Table.OrderBy(s => s.StartTime).ToListAsync().ConfigureAwait(false);
             var favStore = DependencyService.Get<IFavoriteStore>();
-            await favStore.GetItemsAsync(true).ConfigureAwait(false);//pull latest
+            await favStore.GetItemsAsync().ConfigureAwait(false);//pull latest
 
             foreach (var session in sessions)
             {
@@ -47,7 +47,7 @@ namespace XamarinEvolve.DataStore.Azure
         {
             var date = DateTime.UtcNow.AddMinutes(-30);//about to start in next 30
 
-            var sessions = await GetItemsAsync().ConfigureAwait(false);
+            var sessions = await GetItemsAsync(true).ConfigureAwait(false);
 
             var result = sessions.Where(s => s.StartTimeOrderBy > date && s.IsFavorite).Take(2);
            

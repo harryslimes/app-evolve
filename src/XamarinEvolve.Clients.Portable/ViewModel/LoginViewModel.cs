@@ -163,7 +163,7 @@ namespace XamarinEvolve.Clients.Portable
                             G=53,
                             B=235
                         },
-                    UseSafairReaderMode = false,
+                    //UseSafairReaderMode = false,
                     UseSafariWebViewController = true
                 });
         }

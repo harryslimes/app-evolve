@@ -351,7 +351,6 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="Renderers\NavigationViewRenderer.cs" />
-    <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Renderers\ImageCellEx.cs" />
     <Compile Include="Renderers\SwitchCellEx.cs" />
     <Compile Include="Helpers\WifiConfig.cs" />
@@ -363,6 +362,7 @@
     <Compile Include="Backgrounding\DataRefreshService.cs" />
     <Compile Include="Backgrounding\DataRefreshServiceBinder.cs" />
     <Compile Include="Helpers\ListViewSelectionOnTopEffect.cs" />
+    <Compile Include="Helpers\Settings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

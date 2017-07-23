@@ -24,6 +24,7 @@ namespace XamarinEvolve.Clients.Portable
         }
         public async Task<bool> ToggleFavorite(Session session)
         {
+            /*
             if(!Settings.Current.IsLoggedIn)
             {
                 sessionQueued = session;
@@ -31,6 +32,7 @@ namespace XamarinEvolve.Clients.Portable
                 MessagingService.Current.SendMessage(MessageKeys.NavigateLogin);
                 return false;
             }
+            */
 
             sessionQueued = null;
 
