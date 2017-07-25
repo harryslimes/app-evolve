@@ -23,10 +23,10 @@ namespace XamarinEvolve.Droid.Helpers
 
 		public static int NotificationId
 		{
-			get { return AppSettings.GetValueOrDefault<int>(NotificationIdKey, NotificationIdDefault); }
+			get { return AppSettings.GetValueOrDefault(NotificationIdKey, NotificationIdDefault); }
 			set
 			{
-				AppSettings.AddOrUpdateValue<int>(NotificationIdKey, value);
+				AppSettings.AddOrUpdateValue(NotificationIdKey, value);
 			}
 		}
 

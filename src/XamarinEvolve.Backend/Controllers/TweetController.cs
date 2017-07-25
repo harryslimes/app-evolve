@@ -82,11 +82,11 @@ namespace XamarinEvolve.Backend.Controllers
                 await auth.AuthorizeAsync();
 
                 var twitterContext = new TwitterContext(auth);
-
+                string twitterHashtag = ConfigurationManager.AppSettings["TwitterHashTag"];
                 var queryResponse = await
                     (from tweet in twitterContext.Search
                      where tweet.Type == SearchType.Search &&
-                         (tweet.Query == "#XamarinEvolve") &&
+                         (tweet.Query == twitterHashtag) &&
                          tweet.Count == 100
                      select tweet).SingleOrDefaultAsync();
 

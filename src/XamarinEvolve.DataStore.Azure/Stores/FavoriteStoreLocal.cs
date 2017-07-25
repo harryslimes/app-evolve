@@ -59,7 +59,7 @@ namespace XamarinEvolve.DataStore.Azure
 	        return true;
 		}
 
-        public async Task<IEnumerable<Favorite>> GetItemsAsync(bool forceRefresh = false)
+        public async Task<IEnumerable<Favorite>> GetItemsAsync(bool forceRefresh = true)
         {
 			await InitializeStore().ConfigureAwait(false);
 			if (forceRefresh)

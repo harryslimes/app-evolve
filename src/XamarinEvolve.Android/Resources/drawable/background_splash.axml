@@ -2,12 +2,12 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:drawable="@color/primaryDark"/>
+        android:drawable="@color/textIcon"/>
 
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@drawable/logo_launchscreen"/>
+            android:src="@drawable/Momentum_logo"/>
     </item>
 
 </layer-list>

@@ -10,11 +10,11 @@ namespace XamarinEvolve.Clients.Portable
         public const string HockeyAppUWP = "HockeyAppUWP";
 
         public const string AzureServiceBusName = "AzureServiceBusName";
-        public const string AzureServiceBusUrl = "AzureServiceBusUrl";
-        public const string AzureKey ="AzureKey";
-        public const string GoogleSenderId ="GoogleSenderId";
-        public const string AzureHubName = "AzureHubName";
-        public const string AzureListenConneciton = "AzureListenConneciton";
+        public const string AzureServiceBusUrl = "https://MainNotifications.servicebus.windows.net:443/";
+        public const string AzureKey ="Endpoint=sb://mainnotifications.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=kHB9CN8OcSmhBqBmx3L/Yhslmab/TMsYbgX1OxjdXRY=";
+        public const string GoogleSenderId ="767694572213";
+        public const string AzureHubName = "TestNotifications";
+        public const string AzureListenConneciton = "Endpoint=sb://mainnotifications.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=kHB9CN8OcSmhBqBmx3L/Yhslmab/TMsYbgX1OxjdXRY=";
     }
     public static class MessageKeys
     {

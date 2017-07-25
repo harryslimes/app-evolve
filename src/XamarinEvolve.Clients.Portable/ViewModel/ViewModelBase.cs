@@ -38,7 +38,7 @@ namespace XamarinEvolve.Clients.Portable
             if (mock) 
             {
                 DependencyService.Register<ISessionStore, XamarinEvolve.DataStore.Mock.SessionStore> ();
-				DependencyService.Register<IFavoriteStore, XamarinEvolve.DataStore.Mock.FavoriteStore> ();
+				DependencyService.Register<IFavoriteStore, XamarinEvolve.DataStore.Mock. FavoriteStore> ();
                 DependencyService.Register<IFeedbackStore, XamarinEvolve.DataStore.Mock.FeedbackStore> ();
                 DependencyService.Register<ISpeakerStore, XamarinEvolve.DataStore.Mock.SpeakerStore> ();
                 DependencyService.Register<ISponsorStore, XamarinEvolve.DataStore.Mock.SponsorStore> ();

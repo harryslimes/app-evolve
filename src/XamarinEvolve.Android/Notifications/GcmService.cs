@@ -145,7 +145,7 @@ namespace XamarinEvolve.Droid
 
                 var builder = new NotificationCompat.Builder(this)
                     .SetContentIntent(pendingIntent)
-                    .SetContentTitle("Xamarin Evolve")
+                    .SetContentTitle("The World Transformed")
                     .SetAutoCancel(true)
                     .SetStyle(style)
                     .SetSmallIcon(Resource.Drawable.ic_notification)
