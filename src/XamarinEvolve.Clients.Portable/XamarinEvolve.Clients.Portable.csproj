@@ -41,7 +41,7 @@
     <Optimize>true</Optimize>
     <OutputPath>bin\UITest</OutputPath>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>MOBILE;ENABLE_TEST_CLOUD</DefineConstants>
+    <DefineConstants>MOBILE;</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

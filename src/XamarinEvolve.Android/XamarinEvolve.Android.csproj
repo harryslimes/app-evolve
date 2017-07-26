@@ -57,7 +57,7 @@
     <DefineConstants>MOBILE</DefineConstants>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <AssemblyName>XamarinEvolve.Droid</AssemblyName>
-    <AndroidSupportedAbis>armeabi-v7a</AndroidSupportedAbis>
+    <AndroidSupportedAbis>armeabi-v7a;x86</AndroidSupportedAbis>
     <DebugType>
     </DebugType>
     <AndroidLinkSkip />
@@ -427,7 +427,7 @@
     <AndroidResource Include="Resources\drawable-hdpi\heroplaceholder.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\heroplaceholder.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\heroplaceholder.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\Labour-Party-Red-Rose-logo.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Labour_Party_Red_Rose_Logo.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\toolbar.axml" />

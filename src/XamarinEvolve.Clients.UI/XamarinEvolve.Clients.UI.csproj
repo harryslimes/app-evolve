@@ -300,15 +300,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Images\error.png">
       <DeployService-Deploy>True</DeployService-Deploy>
+      <LogicalName>error.png</LogicalName>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\star_outline.png">
       <DeployService-Deploy>True</DeployService-Deploy>
+      <LogicalName>star_outline.png</LogicalName>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\star_selected.png">
       <DeployService-Deploy>True</DeployService-Deploy>
+      <LogicalName>star_selected.png</LogicalName>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\success.png">
       <DeployService-Deploy>True</DeployService-Deploy>
+      <LogicalName>success.png</LogicalName>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Sessions\SessionsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -455,18 +459,21 @@
     <EmbeddedResource Include="Pages\Windows\MenuPageUWP.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
+      <LogicalName>MenuPageUWP.xaml</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Cells\FloorMapCell.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
+      <LogicalName>FloorMapCell.xaml</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\Info\FloorMapsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
+      <LogicalName>FloorMapsPage.xaml</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
