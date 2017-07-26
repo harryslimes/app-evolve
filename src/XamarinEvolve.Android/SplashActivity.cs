@@ -14,7 +14,7 @@ using Android.Support.V7.App;
 
 namespace XamarinEvolve.Droid
 {
-    [Activity(Label = "Evolve16", Icon = "@drawable/newicon", Theme="@style/SplashTheme", MainLauncher=true)]            
+    [Activity(Label = "Conference Test", Icon = "@drawable/Labour_Party_Red_Rose_Logo", Theme="@style/SplashTheme", MainLauncher=true)]            
     //[MetaData ("android.app.shortcuts", Resource ="@xml/shortcuts")]
     public class SplashActivity : AppCompatActivity
     {

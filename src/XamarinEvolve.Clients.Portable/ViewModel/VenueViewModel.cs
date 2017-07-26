@@ -12,12 +12,12 @@ namespace XamarinEvolve.Clients.Portable
     public class VenueViewModel : ViewModelBase
     {
         public bool CanMakePhoneCall => CrossMessaging.Current.PhoneDialer.CanMakePhoneCall;
-        public string EventTitle => "Xamarin Evolve";
-        public string LocationTitle => "Hyatt Regency Orlando";
-        public string Address1 => "9801 International Drive";
-        public string Address2 => "Orlando, FL 32819";
-        public double Latitude => 28.427015;
-        public double Longitude => -81.467563;
+        public string EventTitle => "Labour Party Conference";
+        public string LocationTitle => "The Brighton Centre";
+        public string Address1 => "10A Fleet St";
+        public string Address2 => "Brighton BN1 2GR";
+        public double Latitude => 50.821037;
+        public double Longitude => -0.146184;
 
         ICommand  navigateCommand;
         public ICommand NavigateCommand =>

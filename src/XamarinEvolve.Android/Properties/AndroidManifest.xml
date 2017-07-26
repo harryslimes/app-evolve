@@ -16,6 +16,6 @@
 	<uses-permission android:name="android.permission.CAMERA" />
 	<uses-permission android:name="android.permission.FLASHLIGHT" />
 	<application android:icon="@drawable/labour_party_red_rose_logo" android:theme="@style/MyTheme" android:label="Conference Test">
-		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBJ0Z_zoluz4nSQHA8NNIm8C_ch4UeN59c" />
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDYCRj1J-RobP41MaDq5UPAMRcYoAmB6Kk" />
 	</application>
 </manifest>

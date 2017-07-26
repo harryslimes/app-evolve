@@ -31,10 +31,10 @@ namespace XamarinEvolve.Droid
 {
     
 
-    [Activity(Label = "Evolve16", 
+    [Activity(Label = "Conference Test", 
         Name="com.xamarin.xamarinevolve.MainActivity",
         Exported = true,
-        Icon = "@drawable/newicon", 
+        Icon = "@drawable/Labour_Party_Red_Rose_Logo", 
         LaunchMode = LaunchMode.SingleTask, 
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     [IntentFilter(new []{ Intent.ActionView },

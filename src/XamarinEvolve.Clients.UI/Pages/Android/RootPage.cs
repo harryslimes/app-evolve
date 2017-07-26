@@ -14,6 +14,7 @@ namespace XamarinEvolve.Clients.UI
         Dictionary<int, EvolveNavigationPage> pages;
         DeepLinkPage page;
         bool isRunning = false;
+        bool overrideLogin = true;
         public RootPageAndroid()
         {
             pages = new Dictionary<int, EvolveNavigationPage>();
@@ -94,7 +95,7 @@ namespace XamarinEvolve.Clients.UI
             base.OnAppearing();
 
 
-            if (Settings.Current.FirstRun)
+            if (Settings.Current.FirstRun && !overrideLogin)
             {
                 MessagingService.Current.SendMessage(MessageKeys.NavigateLogin);
             }
