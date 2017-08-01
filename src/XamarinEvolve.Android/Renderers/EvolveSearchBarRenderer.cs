@@ -15,7 +15,11 @@ namespace XamarinEvolve.Droid
             base.OnElementChanged(e);
             if (Control == null)
                 return;
-
+            if (Android.OS.Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.N)
+            {
+                e.NewElement.HeightRequest = 25.0;
+            }
+            e.NewElement.TextColor = Color.Black;
             UpdateSearchIcon();
             UpdateCursorColor();
             UpdateSearchPlate();

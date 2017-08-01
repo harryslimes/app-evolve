@@ -6,9 +6,9 @@
     <Application.Resources>
         <ResourceDictionary>
             <Color x:Key="Primary">#EB255A</Color>
-            <Color x:Key="PrimaryDark">#5D2ABB</Color>
+            <Color x:Key="PrimaryDark">#E30613</Color>
             <Color x:Key="PrimaryDarkTranslucent">#9926213C</Color>
-            <Color x:Key="Accent">#753BE4</Color>
+            <Color x:Key="Accent">#EB255A</Color>
             <Color x:Key="NavigationText">White</Color>
             <Color x:Key="LabelSectionText">#6D6D72</Color>
             <Color x:Key="DetailTextColor">#979797</Color>
